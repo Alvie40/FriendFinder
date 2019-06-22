@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Find a friend by answering some simple questions">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Friend Finder - Survey</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="modal fade" id="myModal">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">And you matched with: </h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p id='friendName'></p>
+	        <img id='friendImg' src="" height='200'>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="container">
+		<h1>Survey Questions</h1>	
+		<hr>
+		<h3>Please supply some basic information about you</h3>
+		<div class="form-group">
+			<label for="Name">Name (Required)</label>
+			<input type="text" class='form-control' id='name' placeholder="Player One">
+		</div>
+		<div class="form-group">
+			<label for="image">Link to Photo Image (Required)</label>
+			<input type="text" class='form-control' id='image' placeholder="Link to your photo">
+		</div>
+        <hr>
+        <h3>For the following statements, select the choice that best describes the level you agree with the statement.</h3>
+        <ol>
+            <li>I take what I want.
+                <div class="form-group">
+                    <select name="q1" id="q1">
+                        <option value="">Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </li>
+            <li>I am very shy.
+                <div class="form-group">
+                    <select name="q2" id="q2">
+                        <option value="">Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </li>
+            <li>I tell it like it is.
+                <div class="form-group">
+                    <select name="q3" id="q3">
+                        <option value="">Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </li>
+            <li>I talk to everyone at a party.
+                <div class="form-group">
+                    <select name="q4" id="q4">
+                        <option value="">Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </li>
+            <li>I am good under pressure.
+                <div class="form-group">
+                    <select name="q5" id="q5">
+                        <option value="">Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </li>
+            <li>I rise to any challenge
+                <div class="form-group">
+                    <select name="q6" id="q6">
+                        <option value="">Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </li>
+            <li>I am frequently exposed to religion.
+                <div class="form-group">
+                    <select name="q7" id="q7">
+                        <option value="">Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </li>
+            <li>I text and drive.
+                <div class="form-group">
+                    <select name="q8" id="q8">
+                        <option value="">Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </li>
+            <li>I enjoy water sports.
+                <div class="form-group">
+                    <select name="q9" id="q9">
+                        <option value="">Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </li>
+            <li>I regret not visiting Notre Dame before it burned on 4/15/2019.
+                <div class="form-group">
+                    <select name="q10" id="q10">
+                        <option value="">Select an Option</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+        
+            </li>
+
+        </ol>
+
+		<div class="btn btn-primary btn-block" id="submit"><h4><span class="glyphicon glyphicon-question-sign"></span> Find a friend</h4></div>
+		<hr>
+		<div>
+			<a href="/api/friends">API Friends List</a>
+			<span>|</span>
+			<a href="https://github.com/rls5113/friendfinder" target="_blank">Github Repo</a>
+		</div>
+		<br>
+	</div>
+	
+	<script src="survey.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

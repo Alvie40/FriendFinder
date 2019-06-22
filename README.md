@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Friend Finder - Node and Express Servers
 
 ### Overview
@@ -117,7 +117,3 @@ After completing the homework please add the piece to your portfolio. Make sure 
 If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
 
 **Good Luck!**
-=======
-# FriendFinder
-FriendFinder
->>>>>>> df5768fe3829d55c9679e79f79e04d073e15751a

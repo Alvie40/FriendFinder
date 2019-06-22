@@ -1,11 +1,10 @@
 {
-  "name": "findfriend",
+  "name": "FriendFinder",
   "version": "1.0.0",
-  "description": "### Overview",
+  "description": "",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
+    "express": "^4.17.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -14,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alvie40/findfriend.git"
+    "url": "git+https://github.com/Alvie40/FriendFinder.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Alvie40/findfriend/issues"
+    "url": "https://github.com/Alvie40/FriendFinder/issues"
   },
-  "homepage": "https://github.com/Alvie40/findfriend#readme"
+  "homepage": "https://github.com/Alvie40/FriendFinder#readme"
 }

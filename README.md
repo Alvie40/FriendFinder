@@ -1,2 +1,2 @@
-# findfriend
-FindFriend
+# FriendFinder
+FriendFinder

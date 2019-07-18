@@ -1,8 +1,7 @@
 # Friend Finder - Node and Express Servers
 
 Heroku link
-https://warm-coast-29868.herokuapp.com/
-
+https://friendfinder2alvie40.herokuapp.com/
 Github link
 https://github.com/alvie40/friendfinder
 
